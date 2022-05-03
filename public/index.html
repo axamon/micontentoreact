@@ -27,12 +27,25 @@
     <title>MiContento</title>
   </head>
   <body>
-    <div class="circle"></div>
-    <div class="circle2"></div>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <h2 id="micontento">MiContento</h2>
-    <h1 class="subtitle">Unità di senso.</h1>
-    <div id="root"></div>
+
+    <div class="grid-container">
+      <div class="grid-item"></div>
+      <div class="grid-item"> <h2 id="micontento">MiContento</h2></div>
+      <div class="grid-item"></div>  
+      <div class="grid-item"></div>
+      <div class="grid-item"><h1 class="subtitle">Unità di misura di senso.</h1></div>
+      <div class="grid-item"></div>  
+      <div class="grid-item"></div>
+      <div class="grid-item card" data-tilt><img width="100%" data-tilt src="Floral-Child-Silhouette.png" /></div>
+      <div class="grid-item"></div>  
+    </div>
+   
+      <div class="circle"></div>
+      <div class="circle2"></div>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+     
+      <div id="root"></div>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -46,6 +59,15 @@
       <footer>
             <p><small>&copy; 2022 MiContento</small></p>
         </footer>
+      <!-- <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+          max: 25,
+          speed: 400
+          });
+        
+        VanillaTilt.init(document.querySelectorAll(".card"));
+      </script> -->
       <script src='https://code.jquery.com/jquery-1.11.3.js'></script><script  src="./circle.js"></script>
+      <script type="text/javascript" src="tilt.js"></script>
   </body>
 </html>

@@ -19,19 +19,30 @@ body {
   background: var(--bg-color);
 }
 
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 1px;
+}
+
+.grid-item {
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 1px;
+  font-size: 30px;
+  text-align: center;
+}
+
 
 #micontento {
   font-size: clamp(1rem, 3vw + 1rem, 4 rem);
-  position: absolute;
-  margin: auto;
-  font-family: 'Source Code Pro', monospace;
   position: relative;
-  width: max-content;
+  margin: 1vw;
+  font-family: 'Source Code Pro', monospace;
+  width: 100%;
   place-content: center;
   align-content: center;
   text-align: center;
   height: max-content;
-  top: -40px;
 }
 
 
@@ -87,8 +98,10 @@ h1::after {
 }
 
 .subtitle {
+  position: relative;
+  z-index: 0;
   color: hsl(49 0% 0%/ 0.7);
-  margin: auto;
+  margin: 0 1vw;
   font-size: 2rem;
   font-weight: 400;
   /* opacity: 0;
@@ -141,6 +154,13 @@ p{
 
 i{
   color:#f00;
+}
+
+.card {
+  margin: 2vw;
+  width: 60vw;
+  height: 30vw;
+  background-color: aqua;
 }
 
 footer{
