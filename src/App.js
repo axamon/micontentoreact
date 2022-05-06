@@ -1,7 +1,11 @@
-import './App.css';
 import Footer from './components/footer/Footer';
 import Title from './components/title/Title';
 import Typewriter from './components/typewriter/Typewriter';
+import Tilt from 'react-parallax-tilt';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
+
 
 function App() {
   return (
@@ -14,7 +18,15 @@ function App() {
         <div class="grid-item"><Typewriter text="Unità di misura di senso."/></div>
         <div class="grid-item"></div>  
         <div class="grid-item"></div>
-        <div class="grid-item card center" data-tilt><img width="100%" data-tilt src="Floral-Child-Silhouette.png" /></div>
+        <div class="grid-item mt-2 responsive">
+          <Tilt trackOnWindow="true" gyroscope="true">
+            <div style={{ height: '300px', backgroundColor: 'lightblue' }}>
+              <img width="100%" data-tilt src="Floral-Child-Silhouette.png" />
+            </div>
+          </Tilt>
+
+         
+        </div>
         <div class="grid-item"></div>  
       </div>
       <Footer owner="MiContento" />
