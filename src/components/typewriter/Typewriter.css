@@ -1,3 +1,9 @@
+:root{
+  --type-speed: 7s;
+  --steps: 25;
+  --speed: 7s;
+}
+
 .typewriter {
     font-size: clamp(1rem, 3vw + 1rem, 4 rem);
     position: absolute;
