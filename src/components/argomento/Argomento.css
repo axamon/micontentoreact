@@ -6,4 +6,7 @@
     position: relative;
   }
 
-  
+  p {
+    text-align: start;
+    width: fit-content;
+}

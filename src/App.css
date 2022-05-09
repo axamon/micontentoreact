@@ -164,12 +164,7 @@ nav a {
   transition:transform 3s cubic-bezier(.02,1.50,.79,1.08);
 }
 
-/* p{
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-} */
+
 
 i{
   color:#f00;
