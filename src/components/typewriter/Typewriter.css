@@ -61,7 +61,7 @@
     color: hsl(49 0% 0%/ 0.7);
     margin: auto;
     padding-bottom: 5px;
-    font-size: clamp(0.5rem, 3vw + 0.5rem, 1rem);
+    font-size: clamp(1.5rem, 2.5vw, 3.5rem); 
     font-weight: 400;
     /* opacity: 0;
     transform: translateY(3rem);

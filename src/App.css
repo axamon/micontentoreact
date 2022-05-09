@@ -30,7 +30,7 @@ body {
 .tilter {
   background: var(--bg-color);
   margin: 2vh 2vw;
-  max-width: 80vw;
+  max-width: 60vw;
   border-width: 10px;
   border-color: black;
 }

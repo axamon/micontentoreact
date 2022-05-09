@@ -19,7 +19,9 @@ function App() {
       <div class="circle"></div>
       <div class="circle2"></div>
       <div class="grid-container">
-        <div class="grid-item"></div>
+        <div class="grid-item">
+          <Title titolo="MiContento"/>
+        </div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>
 
@@ -30,9 +32,8 @@ function App() {
         </div>
         <div class="grid-item"></div>
         
+        <Tilt class="tilter" tiltMaxAngleX="10" >
           <div id="inizio" class="cursor-pointer grid-item mt-4 text-center flex">
-          <Tilt class="tilter" tiltMaxAngleX="10" >
-            <Title titolo="MiContento"/>
             <nav>
               <ul>
                   <li><a href="#Contatti">Contatti</a></li>
@@ -41,16 +42,16 @@ function App() {
               </ul>
             </nav>
             <Typewriter text="Unità di misura di senso."/>
-            <Circolo />
+            {/* <Circolo /> */}
             {/* <div className=''><Spin /></div> */}
 
             <div style={{ height: '10vw', backgroundColor: '' }}>
               {/* <img class="img-fluid" src="Floral-Child-Silhouette.png" /> */}
               {/* <Typewriter text="Codesto solo oggi possiamo dirti: ciò che non siamo e ciò che non vogliamo." /> */}
             </div>
-            </Tilt>
           </div>
-        
+          </Tilt>
+
         <div class="grid-item container">
           
         </div>  
