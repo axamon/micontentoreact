@@ -8,6 +8,7 @@ import Crowdfunding from './components/crowdfunding/Crowdfunding';
 import Arco from './components/arco/Arco';
 import Circolo from './components/circolo/Circolo';
 import Argomento from './components/argomento/Argomento';
+import Navbar  from './components/navbar/Navbar';
 
 // import Spin from './components/spin/Spin';
 
@@ -15,32 +16,18 @@ import Argomento from './components/argomento/Argomento';
 
 function App() {
   return (
-    <div className="App">
+    <div  id="inizio" className="App">
+      <div className='container tm-4'>
+        <Title titolo="MiContento"/>
+        <Navbar />
+      </div>
+
       <div class="circle"></div>
       <div class="circle2"></div>
-      <div class="grid-container">
-        <div class="grid-item">
-          <Title titolo="MiContento"/>
-        </div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-
-        <div class="grid-item"></div>
-        <div class="grid-item">
-        </div>
-        <div class="grid-item">
-        </div>
-        <div class="grid-item"></div>
-        
-        <Tilt class="tilter" tiltMaxAngleX="10" >
-          <div id="inizio" class="cursor-pointer grid-item mt-4 text-center flex">
-            <nav>
-              <ul>
-                  <li><a href="#Contatti">Contatti</a></li>
-                  <li><a href="#Sportello">Sportello</a></li>
-                  <li><a href="#GPT">GPT</a></li>
-              </ul>
-            </nav>
+      
+      <div className='container'>
+        <Tilt tiltMaxAngleX={10} perspective={10000} >
+          <div className='tilter'>
             <Typewriter text="Unità di misura di senso."/>
             {/* <Circolo /> */}
             {/* <div className=''><Spin /></div> */}
@@ -50,19 +37,18 @@ function App() {
               {/* <Typewriter text="Codesto solo oggi possiamo dirti: ciò che non siamo e ciò che non vogliamo." /> */}
             </div>
           </div>
-          </Tilt>
-
-        <div class="grid-item container">
-          
-        </div>  
+        </Tilt>
       </div>
+
+       
       <div className='container'>
         <Crowdfunding />
       </div>
-      <Argomento name="Contatti" contenuto="Contattaci sempre"/>
-      <Argomento name="Sportello" contenuto="Sportello amico"/>
-      <Argomento name="GPT" contenuto="Non so cosa sia"/>
-
+      <div className='argomenti container row'>
+        <Argomento name="Contatti" contenuto="Contattaci sempre"/>
+        <Argomento name="Sportello" contenuto="Sportello amico"/>
+        <Argomento name="GPT" contenuto="Non so cosa sia"/>
+      </div>
      
       <Footer owner="MiContento" />
     </div>

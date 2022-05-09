@@ -7,8 +7,10 @@ export default class Argomento extends Component {
 
     return (
         <div className="argomento" id={name} name={name}>
+            <br></br>
+            <br></br>
             <h1>{name}</h1>
-            <h6><a href="#inizio">torna su</a></h6>
+            <h6><a href="#">torna su</a></h6>
             <br></br>
             <p>{contenuto}</p>
       </div>

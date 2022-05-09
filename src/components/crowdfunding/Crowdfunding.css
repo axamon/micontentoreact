@@ -1,5 +1,6 @@
 
 .crowdfunding {
+    z-index: 10;
     position: fixed;
     bottom: 3vh;
     left: 2vw;
