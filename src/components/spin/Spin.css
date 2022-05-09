@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+.spin {
+  display: flex;
+  position: relative;
+  /* background-color: red; */
+  margin-left: 100px;
+  margin-top: 250px;
+}
+
 /* Remove default margin and padding and reset fonts */
 * {
   margin: 0;
@@ -19,11 +27,11 @@ ol[role=list] {
 }
 
 /* Set core body defaults */
-body {
+/* body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-}
+} */
 
 /* Make images easier to work with */
 img,
@@ -68,19 +76,19 @@ picture {
   --white-dark: #999999;
 }
 
-body {
+/* body {
   font-family: system-ui;
   display: grid;
   min-height: 100vh;
   place-content: center;
   overflow: hidden;
-}
+} */
 
 .orbit {
     z-index: 2;
     align-items: center;
-    display: block;
-    position: fixed;
+    display: flex;
+    position: relative;
   --size: 12rem;
   --speed: 120s;
 }
@@ -90,7 +98,7 @@ body {
   z-index: 10;
 }
 .orbit .center-image img {
-  position: absolute;
+  position: flex;
   transition: opacity 500ms;
 }
 .orbit .center-image img:not(:first-child):hover {

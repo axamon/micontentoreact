@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import './Spin.css';
-import './Spin.css.map';
+// import './Spin.css.map';
 
 
 export default class Spin extends Component {
   render() {
     return (
-        <div class="orbit">
+        <div class="orbit spin">
             <div class="center-image">
           <img src="assets/woman.png" alt="" />
           <img src="assets/man.png" alt="" />
@@ -14,35 +14,35 @@ export default class Spin extends Component {
             <ul>
             <li>
                 <div><img src="assets/analytics.svg" alt=""/></div>
-                <p>Analytics & Reporting</p>
+                <p>Salute</p>
             </li>
             <li>
                 <div><img src="assets/calendar.svg" alt=""/></div>
-                <p>Time & Attendance</p>
+                <p>Istruzione</p>
             </li>
             <li>
                 <div><img src="assets/person.svg" alt=""/></div>
-                <p>Onboarding</p>
+                <p>Spiritualità</p>
             </li>
             <li>
                 <div><img src="assets/finger-print.svg" alt=""/></div>
-                <p>HR Information System</p>
+                <p>Affetti</p>
             </li>
             <li>
                 <div><img src="assets/coconut.svg" alt=""/></div>
-                <p>Leaves & Holidays</p>
+                <p>Viaggi</p>
             </li>
             <li>
                 <div><img src="assets/logout.svg" alt=""/></div>
-                <p>Exit & Off-boarding</p>
+                <p>Natura</p>
             </li>
             <li>
                 <div><img src="assets/plane-1.svg" alt=""/></div>
-                <p>Travel & Requisitions</p>
+                <p>Famiglia</p>
             </li>
             <li>
                 <div><img src="assets/law.svg" alt=""/></div>
-                <p>Disciplinary</p>
+                <p>Società</p>
             </li>
             </ul>
         </div>

@@ -1,0 +1,9 @@
+  .argomento {
+    display: flex;
+    flex-direction: column;
+    text-align: left;  
+    top: 10px;
+    position: relative;
+  }
+
+  
