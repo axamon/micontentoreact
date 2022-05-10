@@ -2,11 +2,17 @@
     display: flex;
     flex-direction: column;
     text-align: left;  
-    margin-top: 30vh;
     position: relative;
+    top: 100vh;
+    padding-top: 12vh;
+  }
+
+  h1 {
+    color: white;
   }
 
   p {
     text-align: start;
     width: fit-content;
+    color: white;
 }

@@ -4,7 +4,12 @@
     position: fixed;
     bottom: 3vh;
     left: 2vw;
-    font-size: clamp(1.5rem, 2.5vw, 4rem); 
+    font-size: clamp(1rem, 2.5vw, 4rem);
+    opacity: 0.7;
+  }
+
+  .crowdfunding:hover {
+    opacity: 1;
   }
 
 /* CSS */
@@ -15,7 +20,7 @@
     color: #000000;
     display: flex;
     font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: clamp(1.5rem, 2.5vw, 4rem); 
+    font-size: clamp(1rem, 2.5vw, 4rem); 
     font-weight: 700;
     justify-content: center;
     line-height: 1.75rem;

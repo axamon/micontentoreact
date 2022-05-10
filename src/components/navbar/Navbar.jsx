@@ -4,7 +4,7 @@ import './Navbar.css';
 export default class Navbar extends Component {
   render() {
     return (
-        <div>
+        <div className='d-flex justify-content-right'>
         <nav>
             <ul>
                 <li><a href="#Contatti">Contatti</a></li>
