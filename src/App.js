@@ -35,11 +35,10 @@ function App() {
         <div className='d-flex justify-content-center'>
 
           <Tilt tiltMaxAngleX={10} perspective={1000000} >
-            <div className='tilter'>
+            <div className='tilter row'>
             <ReactPlayer id="fiamma"
               className='react-player fixed-bottom'
               url={video}
-              width ='90%'
               playing
               loop
               autoPlay

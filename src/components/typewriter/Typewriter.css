@@ -7,7 +7,7 @@
 .typewriter {
     font-size: clamp(1rem, 3vw + 1rem, 4 rem);
     position: absolute;
-    margin: auto;
+    /* margin-top: -5vh; */
     font-family: 'Source Code Pro', monospace;
     /* position: relative; */
     width: max-content;

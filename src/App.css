@@ -46,12 +46,16 @@ body {
 .tilter {
   /* background-color: var(--bg-color); */
     /* background-color: var(--bg-color); */
-
+  
   border-width: 10px;
   border-color: black;
   max-width: min-content;
-  margin-top: auto;
-  min-width: fit-content;
+  margin-top: 5vh;
+  height: 100px;
+  text-align: center;
+  align-content: center;
+  max-height: 20vh;
+  max-width: 60vw;
   min-height: 200px;
   /* height: 50vh; */
   /* left:50%;
@@ -64,10 +68,6 @@ body {
   margin-top: 20vh;
   max-width: fit-content;
 } */
-
-.tiltclass {
-  width: 80vw;
-}
 
 .argomenti {
   margin-top: 200px;
