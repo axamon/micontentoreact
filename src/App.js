@@ -11,7 +11,7 @@ import Circolo from './components/circolo/Circolo';
 import Argomento from './components/argomento/Argomento';
 import Navbar  from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-
+import ReactPlayer from 'react-player'
 import video from "./MVI_0025.mp4"
 
 // import Spin from './components/spin/Spin';
@@ -36,10 +36,15 @@ function App() {
 
           <Tilt tiltMaxAngleX={10} perspective={1000000} >
             <div className='tilter'>
-              <video id="fiamma" width="90%" loop autoPlay muted>
-                <source src={video} type="video/mp4" />
-                Your browser does not support HTML5 video.
-              </video>
+            <ReactPlayer id="fiamma"
+              className='react-player fixed-bottom'
+              url={video}
+              width ='90%'
+              playing
+              loop
+              autoPlay
+              muted
+            />
               <Typewriter text="Unità di misura di senso."/>
             </div>
           </Tilt>
