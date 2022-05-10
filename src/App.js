@@ -12,7 +12,6 @@ import Argomento from './components/argomento/Argomento';
 import Navbar  from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import ReactPlayer from 'react-player'
-import video from "./MVI_0025.mp4"
 
 // import Spin from './components/spin/Spin';
 
@@ -38,7 +37,7 @@ function App() {
             <div className='tilter row'>
             <ReactPlayer id="fiamma"
               className='react-player fixed-bottom'
-              url={video}
+              url='MVI_0025.mp4'
               playing
               loop
               autoPlay
