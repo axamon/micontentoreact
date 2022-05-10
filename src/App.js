@@ -11,7 +11,9 @@ import Circolo from './components/circolo/Circolo';
 import Argomento from './components/argomento/Argomento';
 import Navbar  from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+import Video from './video.mp4';
+import Collegamenti from './components/collegamenti/Collegamenti';
 
 // import Spin from './components/spin/Spin';
 
@@ -19,21 +21,26 @@ import ReactPlayer from 'react-player'
 
 function App() {
   return (
+    <>
     <div  id="inizio" className="App">
       <div className='container tm-4'>
         <Title titolo="MiContento"/>
-        <Navbar />
+        <Collegamenti />
       </div>
-
+    </div>
       <div class="circle"></div>
       <div class="circle2"></div>
       
-    
+    <div  id="inizio2">
+
 
       <div className='container'>
         <div className='d-flex justify-content-center'>
 
-          <Tilt tiltMaxAngleX={10} perspective={1000000} >
+        <video width="1300" autostart loop muted autoPlay src={Video} type="video/mp4" />
+
+
+          {/* <Tilt tiltMaxAngleX={10} perspective={1000000} >
             <div className='tilter row'>
             <ReactPlayer id="fiamma"
               className='react-player fixed-bottom'
@@ -43,11 +50,10 @@ function App() {
               autoPlay
               muted
             />
-              <Typewriter text="Unità di misura di senso."/>
             </div>
-          </Tilt>
-          <div className='motto'>
-          </div>
+          </Tilt> */}
+          {/* <div className='motto'>
+          </div> */}
         </div>
         <div className='argomenti row'>
           <Argomento name="Contatti" contenuto="Contattaci solo il 31 novembre o il 30 febbraio"/>
@@ -64,6 +70,7 @@ function App() {
      
       <Footer owner="MiContento" />
     </div>
+  </>
   );
 }
 
