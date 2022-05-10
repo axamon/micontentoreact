@@ -6,6 +6,11 @@
   --bg-color: hsl(49 37% 94%);
 }
 
+.motto {
+  margin-top: 60px;
+  position: absolute;
+}
+
 body {
   /* margin: 0; */
   display: flexbox;
@@ -13,6 +18,7 @@ body {
   /* place-content: center;
   align-content: center;
   text-align: center; */
+  overflow: hidden;
   background-color: #00887a44;
   animation: name 20s infinite forwards;
 }
@@ -30,16 +36,22 @@ body {
   --article-load-delay: calc(var(--nav-load-time)+var(--nav-link-load-time))
 }
 
-#inizio {
+#fiamma {
+  position: relative;
+  display: flex;
+  margin-top: 100px;
 }
 
 
 .tilter {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+    /* background-color: var(--bg-color); */
+
   border-width: 10px;
   border-color: black;
-  margin-top: 20vh;
-  min-width: 80vw;
+  max-width: min-content;
+  margin-top: auto;
+  min-width: fit-content;
   min-height: 200px;
   /* height: 50vh; */
   /* left:50%;

@@ -6,7 +6,7 @@ export default class Title extends Component {
   render() {
     const { titolo = "Titolo" } = this.props;
     return (
-      <div className='titolo'>{titolo}</div>
+      <div className='titolo'><a href="#">{titolo}</a></div>
     )
   }
 }

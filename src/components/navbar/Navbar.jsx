@@ -7,7 +7,7 @@ export default class Navbar extends Component {
         <div className='d-flex justify-content-right'>
         <nav>
             <ul>
-                <li><a href="#Contatti">Contatti</a></li>
+            <a href="#Contatti"><li>Contatti</li></a>
                 <li><a href="#Sportello">Sportello</a></li>
                 <li><a href="#GPT">GPT</a></li>
             </ul>

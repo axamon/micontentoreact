@@ -6,7 +6,7 @@ nav {
     animation: nav-load 300ms ease-in;
     top: 3.5vh;
     right: 1vw;
-    width: fit-content;
+    /* width: fit-content; */
     font-size: clamp(1rem, 1rem+2.5vw, 3rem);
   }
   
@@ -32,15 +32,14 @@ nav {
   
   nav li {
     list-style: none;
-    padding: 10px;
-    margin: 0 5px;
+    /* padding: 1em; */
+    margin: 0 1em;
     animation-name: nav-link-load;
     animation-duration: 500ms;
     animation-timing-function: ease-in;
     animation-delay: 300ms;
     animation-fill-mode: forwards;
     transform: scale(0);
-    font-size: clamp(1rem, 1rem+2.5vw, 3rem);
   }
   
   @keyframes nav-link-load {

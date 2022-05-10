@@ -1,3 +1,20 @@
+
+a {
+    color: white;
+    
+}
+
+.titolo>a:link { text-decoration: none; }
+
+
+.titolo>a:visited { text-decoration: none; }
+
+
+.titolo>a:hover { text-decoration: none; }
+
+
+.titolo>a:active { text-decoration: none; }
+
 .titolo {
     z-index: 100;
     position: fixed;
@@ -6,4 +23,6 @@
     font-size: clamp(1.5rem, 2.5vw, 4rem); 
     font: bolder;
     color: white;
+    margin-bottom: 40px;
 }
+
